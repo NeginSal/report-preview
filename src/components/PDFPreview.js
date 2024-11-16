@@ -23,8 +23,6 @@ const PDFPreview = ({ images, onClose }) => {
           >
             {({ loading }) => (loading ? "Preparing document..." : "Download PDF")}
           </PDFDownloadLink>
-
-          {/* Close Preview Button */}
           <button type="button" className="btn btn-secondary ms-2" onClick={onClose} style={{ marginBottom: "10px" }}>
             Back to Image List
           </button>
@@ -32,6 +30,7 @@ const PDFPreview = ({ images, onClose }) => {
       </div>
     )
   };
+
   return (
     <>
       {showPDFPreview()}
